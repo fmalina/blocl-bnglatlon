@@ -1,7 +1,7 @@
 #This code converts lat lon (WGS84) to british national grid (OSBG36)
-from scipy import *
-
+from math import sqrt, pi, sin, cos, tan, atan2
 import csv
+
 
 def WGS84toOSGB36(lat, lon):
     
@@ -37,15 +37,15 @@ def WGS84toOSGB36(lat, lon):
     p = sqrt(x_2**2 + y_2**2)
     
     #Lat is obtained by an iterative proceedure:
-    lat = arctan2(z_2,(p*(1-e2))) #Initial value
+    lat = atan2(z_2,(p*(1-e2))) #Initial value
     latold = 2*pi
     while abs(lat - latold)>10**-16:
         lat, latold = latold, lat
         nu = a/sqrt(1-e2*sin(latold)**2)
-        lat = arctan2(z_2+e2*nu*sin(latold), p)
+        lat = atan2(z_2+e2*nu*sin(latold), p)
     
     #Lon and height are then pretty easy
-    lon = arctan2(y_2,x_2)
+    lon = atan2(y_2,x_2)
     H = p/cos(lat) - nu
     
     #E, N are the British national grid coordinates - eastings and northings
