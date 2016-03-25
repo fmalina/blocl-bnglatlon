@@ -12,8 +12,7 @@ Documentation
 - `bng_to_latlon.py`_ originally published as `Converting British National Grid to Latitude and Longitude II`_
 - `latlon_to_bng.py`_ originally `Converting Latitude and Longitude to British National grid`_
 
-The mathematical theory used here is set out in the following document:
-  http://www.ordnancesurvey.co.uk/docs/support/guide-coordinate-systems-great-britain.pdf
+The mathematical theory used here is set out in `A guide to coordinate systems in Great Britain`_ by Ordnance Survey.
 
 Installation
 ------------
@@ -41,7 +40,6 @@ Usage
 To Do
 -------
 
-- notify devs, share
 - common importable constants and separate util functions (Helmut transform...)
 - CLI to accept filename or value pair as args
 
@@ -51,3 +49,5 @@ To Do
 .. _`Hannah Fry`: http://www.hannahfry.co.uk/
 .. _`Converting British National Grid to Latitude and Longitude II`: http://www.hannahfry.co.uk/blog/2012/02/01/converting-british-national-grid-to-latitude-and-longitude-ii
 .. _`Converting Latitude and Longitude to British National grid`: http://www.hannahfry.co.uk/blog/2012/02/01/converting-latitude-and-longitude-to-british-national-grid
+.. _`A guide to coordinate systems in Great Britain`: 
+http://www.ordnancesurvey.co.uk/docs/support/guide-coordinate-systems-great-britain.pdf
