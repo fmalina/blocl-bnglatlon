@@ -6,11 +6,14 @@ Originally authored by `Hannah Fry`_.
 
 **NEW!** importable, installable, PEP8 styled, pure python and doctested
 
-Included
---------
+Documentation
+-------------
 
 - `bng_to_latlon.py`_ originally published as `Converting British National Grid to Latitude and Longitude II`_
 - `latlon_to_bng.py`_ originally `Converting Latitude and Longitude to British National grid`_
+
+The mathematical theory used here is set out in the following document:
+  http://www.ordnancesurvey.co.uk/docs/support/guide-coordinate-systems-great-britain.pdf
 
 Installation
 ------------
