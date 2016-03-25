@@ -9,7 +9,7 @@ setup(
     license='MIT License',
     platforms=['OS Independent'],
     keywords='GPS, OSGB',
-    author='Hannah Fry, fmalina',
+    author='Hannah Fry, F. Malina',
     author_email='fmalina@gmail.com',
     url='https://github.com/fmalina/bng_latlon',
     classifiers=[
