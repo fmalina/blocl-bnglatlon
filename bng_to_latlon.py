@@ -5,11 +5,18 @@ http://www.hannahfry.co.uk/blog/2012/02/01/converting-british-national-grid-to-l
 """
 
 from math import sqrt, pi, sin, cos, tan, atan2
-import csv
 
 
 def OSGB36toWGS84(E, N):
-    """ E, N are the British national grid coordinates - eastings and northings
+    """ Accept The Ordnance Survey National Grid eastings and northings.
+    Return latitude and longitude coordinates.
+
+    Usage:
+    >>> from bng_to_latlon import OSGB36toWGS84
+    >>> OSGB36toWGS84(538890, 177320)
+    (51.47779538331092, -0.0014016837826672265)
+    >>> OSGB36toWGS84(352500.2, 401400)
+    (53.507129843104195, -2.7176599627343263)
     """
     # The Airy 1830 semi-major and semi-minor axes used for OSGB36 (m)
     a, b = 6377563.396, 6356256.909
@@ -111,6 +118,11 @@ def OSGB36toWGS84(E, N):
 
 
 if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+
+    import csv
+
     # Read in from a file
     BNG = csv.reader(open('BNG.csv', 'rU'), delimiter=',')
     BNG.next()

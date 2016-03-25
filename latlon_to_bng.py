@@ -4,12 +4,18 @@ Author: Hannah Fry
 http://www.hannahfry.co.uk/blog/2012/02/01/converting-latitude-and-longitude-to-british-national-grid
 """
 from math import sqrt, pi, sin, cos, tan, atan2
-import csv
 
 
 def WGS84toOSGB36(lat, lon):
     """ Accept latitude and longitude as used in GPS.
-    Return OSGB grid coordinates: eastings and northings
+    Return OSGB grid coordinates: eastings and northings.
+
+    Usage:
+    >>> from latlon_to_bng import WGS84toOSGB36
+    >>> WGS84toOSGB36(51.4778, -0.0014)
+    (538890.1053365842, 177320.49650700082)
+    >>> WGS84toOSGB36(53.50713, -2.71766)
+    (352500.19520169357, 401400.01483428996)
     """
     # First convert to radians
     # These are on the wrong ellipsoid currently: GRS80. (Denoted by _1)
@@ -94,6 +100,11 @@ def WGS84toOSGB36(lat, lon):
 
 
 if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
+
+    import csv
+
     # Read in from a file
     lat_lon = csv.reader(open('LatLon.csv', 'rU'), delimiter=',')
     lat_lon.next()
