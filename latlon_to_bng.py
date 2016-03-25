@@ -8,6 +8,9 @@ import csv
 
 
 def WGS84toOSGB36(lat, lon):
+    """ Accept latitude and longitude as used in GPS.
+    Return OSGB grid coordinates: eastings and northings
+    """
     # First convert to radians
     # These are on the wrong ellipsoid currently: GRS80. (Denoted by _1)
     lat_1 = lat*pi/180
