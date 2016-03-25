@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name="bng_latlon",
@@ -12,6 +12,12 @@ setup(
     author='Hannah Fry, fmalina',
     author_email='fmalina@gmail.com',
     url="https://github.com/fmalina/bng_latlon",
-    packages=find_packages(),
-    include_package_data=True
+    classifiers=[
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3",
+        "Intended Audience :: Developers",
+        "Topic :: Software Development :: Libraries",
+        "Topic :: Utilities",
+    ],
+    py_modules=['bng_to_latlon', 'latlon_to_bng'],
 )
