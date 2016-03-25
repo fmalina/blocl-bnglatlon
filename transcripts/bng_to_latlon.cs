@@ -1,8 +1,7 @@
 using System;
 
 namespace Whatever.Namespace.You.Want {
- //adapted from the python script at
- //http://hannahfry.co.uk/2012/02/01/converting-british-national-grid-to-latitude-and-longitude-ii/
+ //adapted from the python script by Andy Nichols
  //where variables have non-descriptive names it's because I couldn't see what they represent
  public static class GeoCoordinatesConverter {
   private

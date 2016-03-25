@@ -1,3 +1,5 @@
+//Written by Chris Dack
+
 function OSGB36toWGS84(E, N) {
 
     //E, N are the British national grid coordinates - eastings and northings

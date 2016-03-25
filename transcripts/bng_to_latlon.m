@@ -1,3 +1,4 @@
+// Written by David Gibson http://bangmeansdoit.co.uk
 // Convert OSGB36 easting/northing to WSG84 latitude and longitude
 – (CLLocation*) latLon_WSG84
 {
