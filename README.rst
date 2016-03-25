@@ -15,16 +15,11 @@ Included
 Installation
 ------------
 
-To get the latest stable release from PyPi
+Get the latest stable release from PyPi:
 
 ::
 
     pip install bng_latlon
-
-or a latest version:
-::
-
-    pip install -e git+git://github.com/fmalina/bng_latlon.git#egg=bng_latlon
 
 
 Usage
@@ -43,14 +38,13 @@ Usage
 To Do
 -------
 
-- PYPI listing
 - notify devs, share
 - common importable constants and separate util functions (Helmut transform...)
 - CLI to accept filename or value pair as args
 
 
-.. _bng_to_latlon.py: bng_to_latlon.py
-.. _latlon_to_bng.py: latlon_to_bng.py
+.. _bng_to_latlon.py: https://github.com/fmalina/bng_latlon/blob/master/bng_to_latlon.py
+.. _latlon_to_bng.py: https://github.com/fmalina/bng_latlon/blob/master/latlon_to_bng.py
 .. _`Hannah Fry`: http://www.hannahfry.co.uk/
 .. _`Converting British National Grid to Latitude and Longitude II`: http://www.hannahfry.co.uk/blog/2012/02/01/converting-british-national-grid-to-latitude-and-longitude-ii
 .. _`Converting Latitude and Longitude to British National grid`: http://www.hannahfry.co.uk/blog/2012/02/01/converting-latitude-and-longitude-to-british-national-grid
