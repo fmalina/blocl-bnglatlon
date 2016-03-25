@@ -72,7 +72,7 @@ def OSGB36toWGS84(E, N):
     rxs, rys, rzs = 0.1502, 0.2470, 0.8421
 
     # convert seconds to radians
-    def sec_to_rad(x): x*pi/(180*3600.)
+    def sec_to_rad(x): return x*pi/(180*3600.)
 
     rx, ry, rz = [sec_to_rad(x) for x in (rxs, rys, rzs)]  # (in radians)
     x_2 = tx + (1+s)*x_1 + (-rz)*y_1 + (ry)*z_1
