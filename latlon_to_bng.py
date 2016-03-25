@@ -81,21 +81,23 @@ def WGS84toOSGB36(lat, lon):
     #Job's a good'n.
     return E,N
 
-#Read in from a file
-LatLon = csv.reader(open('LatLon.csv', 'rU'), delimiter = ',')
-LatLon.next()
 
-#Get the output file ready
-outputFile = open('LatLonandBNG.csv', 'wb')
-output=csv.writer(outputFile,delimiter=',')
-output.writerow(['Lat', 'Lon', 'E', 'N'])
+if __name__ == "__main__":
+    #Read in from a file
+    LatLon = csv.reader(open('LatLon.csv', 'rU'), delimiter = ',')
+    LatLon.next()
 
-#Loop through the data
-for line in LatLon:
-    lat = line[0]
-    lon = line[1]
-    E, N = WGS84toOSGB36(float(lat), float(lon))
-    output.writerow([str(lat), str(lon), str(E), str(N)])
+    #Get the output file ready
+    outputFile = open('LatLonandBNG.csv', 'wb')
+    output=csv.writer(outputFile,delimiter=',')
+    output.writerow(['Lat', 'Lon', 'E', 'N'])
 
-#Close the output file
-outputFile.close()
+    #Loop through the data
+    for line in LatLon:
+        lat = line[0]
+        lon = line[1]
+        E, N = WGS84toOSGB36(float(lat), float(lon))
+        output.writerow([str(lat), str(lon), str(E), str(N)])
+
+    #Close the output file
+    outputFile.close()
