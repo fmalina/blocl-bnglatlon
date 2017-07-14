@@ -125,10 +125,11 @@ if __name__ == "__main__":
 
     # Read in from a file
     BNG = csv.reader(open('BNG.csv', 'rU'), delimiter=',')
-    BNG.next()
+    BNG.__next__()
 
     # Get the output file ready
-    output_file = open('BNGandLatLon.csv', 'wb')
+    #changes made because of: #https://stackoverflow.com/questions/3348460/csv-file-written-with-python-has-blank-lines-between-each-row
+    output_file = open('BNGandLatLon.csv', 'w+', newline='')
     output = csv.writer(outputFile, delimiter=',')
     output.writerow(['Lat', 'Lon', 'E', 'N'])
 
