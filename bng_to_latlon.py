@@ -130,7 +130,7 @@ if __name__ == "__main__":
     # Get the output file ready
     #changes made because of: #https://stackoverflow.com/questions/3348460/csv-file-written-with-python-has-blank-lines-between-each-row
     output_file = open('BNGandLatLon.csv', 'w+', newline='')
-    output = csv.writer(outputFile, delimiter=',')
+    output = csv.writer(output_file, delimiter=',')
     output.writerow(['Lat', 'Lon', 'E', 'N'])
 
     # Loop through the data
