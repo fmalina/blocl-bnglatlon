@@ -107,7 +107,7 @@ if __name__ == "__main__":
 
     # Read in from a file
     lat_lon = csv.reader(open('LatLon.csv', 'rU'), delimiter=',')
-      next(lat_lon)
+    next(lat_lon)
 
     # Get the output file ready
     # Issue encountered: https://stackoverflow.com/questions/3348460/csv-file-written-with-python-has-blank-lines-between-each-row
