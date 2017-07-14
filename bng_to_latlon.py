@@ -125,7 +125,7 @@ if __name__ == "__main__":
 
     # Read in from a file
     BNG = csv.reader(open('BNG.csv', 'rU'), delimiter=',')
-    BNG.__next__()
+    next(BNG)
 
     # Get the output file ready
     #changes made because of: #https://stackoverflow.com/questions/3348460/csv-file-written-with-python-has-blank-lines-between-each-row
