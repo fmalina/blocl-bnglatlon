@@ -5,7 +5,13 @@ http://www.hannahfry.co.uk/blog/2012/02/01/converting-british-national-grid-to-l
 """
 
 from math import sqrt, pi, sin, cos, tan, atan2
-from numba import jit
+try:
+    from numba import jit
+except ImportError:
+    def jit(*args, **kwargs):
+        """Dummy decorator to use if numba not installed"""
+        def decorator(func): return func
+        return decorator
 
 
 @jit(nopython=True)
