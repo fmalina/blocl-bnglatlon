@@ -4,7 +4,7 @@ Author: Hannah Fry
 http://www.hannahfry.co.uk/blog/2012/02/01/converting-latitude-and-longitude-to-british-national-grid
 """
 from math import sqrt, pi, sin, cos, tan, atan2
-from numba import jit
+from bng_to_latlon import jit  # numba jit with fallback to dummy decorator if not installed
 
 
 @jit(nopython=True)
