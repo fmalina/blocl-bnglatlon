@@ -5,8 +5,16 @@ http://www.hannahfry.co.uk/blog/2012/02/01/converting-british-national-grid-to-l
 """
 
 from math import sqrt, pi, sin, cos, tan, atan2
+try:
+    from numba import jit
+except ImportError:
+    def jit(*args, **kwargs):
+        """Dummy decorator to use if numba not installed"""
+        def decorator(func): return func
+        return decorator
 
 
+@jit(nopython=True)
 def OSGB36toWGS84(E, N):
     """ Accept The Ordnance Survey National Grid eastings and northings.
     Return latitude and longitude coordinates.
@@ -61,8 +69,8 @@ def OSGB36toWGS84(E, N):
     dE = E-E0
 
     # These are on the wrong ellipsoid currently: Airy 1830 (denoted by _1)
-    lat_1 = lat - VII*dE**2 + VIII*dE**4 - IX*dE**6
-    lon_1 = lon0 + X*dE - XI*dE**3 + XII*dE**5 - XIIA*dE**7
+    lat_1 = lat - VII*dE**2 + VIII*dE**4. - IX*dE**6.
+    lon_1 = lon0 + X*dE - XI*dE**3 + XII*dE**5. - XIIA*dE**7.
 
     # Want to convert to the GRS80 ellipsoid.
     # First convert to cartesian from spherical polar coordinates
