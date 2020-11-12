@@ -3,15 +3,15 @@ from setuptools import setup
 
 setup(
     name='bng_latlon',
-    version='1.0',
+    version='1.0.1',
     description='Converts british national grid (OSBG36) to lat lon (WGS84) and vice versa.',
     long_description=open('README.rst').read(),
     license='MIT License',
     platforms=['OS Independent'],
     keywords='GPS, OSGB',
     author='Hannah Fry, F. Malina',
-    author_email='fmalina@gmail.com',
-    url='https://github.com/fmalina/bng_latlon',
+    author_email='hi@blocl.com',
+    url='https://github.com/fmalina/blocl-bnglatlon',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Programming Language :: Python :: 2.7',
