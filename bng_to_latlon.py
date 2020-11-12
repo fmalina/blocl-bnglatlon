@@ -147,3 +147,8 @@ if __name__ == "__main__":
         output.writerow([str(lat), str(lon), str(E), str(N)])
     # Close the output file
     output_file.close()
+
+
+# To Do
+# # common importable constants and separate util functions (Helmut transform...)
+# # CLI to accept filename or value pair as args
