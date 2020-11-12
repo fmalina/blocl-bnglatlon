@@ -44,12 +44,6 @@ Usage
     >>> WGS84toOSGB36(51.4778, -0.0014)
     (538890.1053365842, 177320.49650700082)
 
-To Do
--------
-
-- common importable constants and separate util functions (Helmut transform...)
-- CLI to accept filename or value pair as args
-
 
 .. _bng_to_latlon.py: https://github.com/fmalina/bng_latlon/blob/master/bng_to_latlon.py
 .. _latlon_to_bng.py: https://github.com/fmalina/bng_latlon/blob/master/latlon_to_bng.py
