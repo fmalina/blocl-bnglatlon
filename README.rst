@@ -1,6 +1,6 @@
 BNG ⇄ LatLon
 ------------
-Converts british national grid (OSBG36) to lat lon (WGS84) and vice versa.
+Converts british national grid (OSBG36) to lat lon (WGS84) and vice versa as used by https://blocl.uk
 
 Originally authored by `Hannah Fry`_.
 
