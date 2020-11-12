@@ -48,6 +48,6 @@ To Do
 .. _bng_to_latlon.py: https://github.com/fmalina/bng_latlon/blob/master/bng_to_latlon.py
 .. _latlon_to_bng.py: https://github.com/fmalina/bng_latlon/blob/master/latlon_to_bng.py
 .. _`Hannah Fry`: http://www.hannahfry.co.uk/
-.. _`Converting British National Grid to Latitude and Longitude II`: http://www.hannahfry.co.uk/blog/2012/02/01/converting-british-national-grid-to-latitude-and-longitude-ii
-.. _`Converting Latitude and Longitude to British National grid`: http://www.hannahfry.co.uk/blog/2012/02/01/converting-latitude-and-longitude-to-british-national-grid
+.. _`Converting British National Grid to Latitude and Longitude II`: https://web.archive.org/web/20170211043005/http://www.hannahfry.co.uk/blog/2012/02/01/converting-british-national-grid-to-latitude-and-longitude-ii
+.. _`Converting Latitude and Longitude to British National grid`: https://web.archive.org/web/20170212042531/http://www.hannahfry.co.uk/blog/2012/02/01/converting-latitude-and-longitude-to-british-national-grid
 .. _`A guide to coordinate systems in Great Britain`: http://www.ordnancesurvey.co.uk/docs/support/guide-coordinate-systems-great-britain.pdf
