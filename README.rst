@@ -24,6 +24,12 @@ Get the latest stable release from PyPi:
 
     pip install bng_latlon
 
+optional but recommend is numba compiler
+
+::
+
+    pip install numba
+
 
 Usage
 -----
