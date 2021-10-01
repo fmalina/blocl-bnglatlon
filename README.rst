@@ -36,17 +36,17 @@ Usage
 
 ::
 
-    >>> from bng_to_latlon import OSGB36toWGS84
+    >>> from bng_latlon import OSGB36toWGS84
     >>> OSGB36toWGS84(538890, 177320)
     (51.47779538331092, -0.0014016837826672265)
     ...
-    >>> from latlon_to_bng import WGS84toOSGB36
+    >>> from bng_latlon import WGS84toOSGB36
     >>> WGS84toOSGB36(51.4778, -0.0014)
     (538890.1053365842, 177320.49650700082)
 
 
-.. _bng_to_latlon.py: https://github.com/fmalina/bng_latlon/blob/master/bng_to_latlon.py
-.. _latlon_to_bng.py: https://github.com/fmalina/bng_latlon/blob/master/latlon_to_bng.py
+.. _bng_to_latlon.py: https://github.com/fmalina/bng_latlon/blob/master/bng_latlon/bng_to_latlon.py
+.. _latlon_to_bng.py: https://github.com/fmalina/bng_latlon/blob/master/bng_latlon/latlon_to_bng.py
 .. _`Hannah Fry`: http://www.hannahfry.co.uk/
 .. _`Converting British National Grid to Latitude and Longitude II`: https://web.archive.org/web/20170211043005/http://www.hannahfry.co.uk/blog/2012/02/01/converting-british-national-grid-to-latitude-and-longitude-ii
 .. _`Converting Latitude and Longitude to British National grid`: https://web.archive.org/web/20170212042531/http://www.hannahfry.co.uk/blog/2012/02/01/converting-latitude-and-longitude-to-british-national-grid
