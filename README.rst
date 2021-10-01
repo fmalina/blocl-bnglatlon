@@ -38,11 +38,11 @@ Usage
 
     >>> from bng_latlon import OSGB36toWGS84
     >>> OSGB36toWGS84(538890, 177320)
-    (51.47779538331092, -0.0014016837826672265)
+    (51.477795, -0.001402)
     ...
     >>> from bng_latlon import WGS84toOSGB36
     >>> WGS84toOSGB36(51.4778, -0.0014)
-    (538890.1053365842, 177320.49650700082)
+    (538890.1053, 177320.4965)
 
 
 .. _bng_to_latlon.py: https://github.com/fmalina/bng_latlon/blob/master/bng_latlon/bng_to_latlon.py

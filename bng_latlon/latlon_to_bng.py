@@ -15,9 +15,9 @@ def WGS84toOSGB36(lat, lon):
     Usage:
     >>> from latlon_to_bng import WGS84toOSGB36
     >>> WGS84toOSGB36(51.4778, -0.0014)
-    (538890.1053365842, 177320.49650700082)
+    (538890.1053, 177320.4965)
     >>> WGS84toOSGB36(53.50713, -2.71766)
-    (352500.19520169357, 401400.01483428996)
+    (352500.1952, 401400.0148)
     """
     # First convert to radians
     # These are on the wrong ellipsoid currently: GRS80. (Denoted by _1)
@@ -98,7 +98,7 @@ def WGS84toOSGB36(lat, lon):
     E = E0 + IV*(lon-lon0) + V*(lon-lon0)**3 + VI*(lon-lon0)**5
 
     # Job's a good'n.
-    return E, N
+    return round(E, 4), round(N, 4)
 
 
 if __name__ == "__main__":

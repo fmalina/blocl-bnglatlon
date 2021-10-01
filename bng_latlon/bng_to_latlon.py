@@ -22,9 +22,9 @@ def OSGB36toWGS84(E, N):
     Usage:
     >>> from bng_to_latlon import OSGB36toWGS84
     >>> OSGB36toWGS84(538890, 177320)
-    (51.47779538331092, -0.0014016837826672265)
+    (51.477795, -0.001402)
     >>> OSGB36toWGS84(352500.2, 401400)
-    (53.507129843104195, -2.7176599627343263)
+    (53.50713, -2.71766)
     """
     # The Airy 1830 semi-major and semi-minor axes used for OSGB36 (m)
     a, b = 6377563.396, 6356256.909
@@ -122,7 +122,7 @@ def OSGB36toWGS84(E, N):
     lon = lon*180/pi
 
     # Job's a good'n.
-    return lat, lon
+    return round(lat, 6), round(lon, 6)
 
 
 if __name__ == "__main__":
