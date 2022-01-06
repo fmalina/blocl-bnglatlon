@@ -55,4 +55,4 @@ Usage
 
 ---
 
-<p align="center"><em>MIT licensed. Designed for <a href="https://blocl.uk/schools/">Blocl Schools</a>. Built in Slovakia.</em></p>
+<p align="center"><em>MIT licensed. Designed in the UK, published from Slovakia. <a href="https://blocl.uk/schools/">Blocl Schools</a>.</em></p>
