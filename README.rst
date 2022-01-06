@@ -1,15 +1,18 @@
-<p align="center"><img src="https://raw.githubusercontent.com/fmalina/blocl-bnglatlon/main/gb.png"
-  width="557" height="724"></p>
-<p align="center">🇬🇧 <em>BNG ⇄ LatLon</em>🌐</p>
-<p align="center"><a href="https://pypi.org/project/bng-latlon/">
-  <img alt="pypi" src="https://img.shields.io/pypi/v/bng-latlon.svg"></a></p>
----
+.. raw:: html
+    <p align="center"><img src="https://raw.githubusercontent.com/fmalina/blocl-bnglatlon/main/gb.png"
+      width="557" height="724"></p>
+    <p align="center">🇬🇧 <em>BNG ⇄ LatLon</em>🌐</p>
+    <p align="center"><a href="https://pypi.org/project/bng-latlon/">
+      <img alt="pypi" src="https://img.shields.io/pypi/v/bng-latlon.svg"></a></p>
+    <hr>
 
-Converts british national grid eastings and northings (OSBG36) to latitude and longitude (WGS84) and vice versa as used by https://blocl.uk
+Converts british national grid eastings and northings (OSBG36) to latitude and longitude (WGS84)
+and vice versa as used by https://blocl.uk
 
 Originally authored by `Hannah Fry`_.
 
-**NEW!** importable, installable, PEP8 styled, pure python, doctested, with optional numba compiler support for 10x speed
+**NEW!** importable, installable, PEP8 styled, pure python, doctested, with optional numba compiler
+support for 10x speed
 
 Documentation
 -------------
@@ -49,9 +52,11 @@ Usage
     >>> WGS84toOSGB36(51.4778, -0.0014)
     (538890.1053, 177320.4965)
 
----
 
-<p align="center"><em>MIT licensed. Designed for <a href="https://blocl.uk/schools/">Blocl Schools</a>. Built in Slovakia.</em></p>
+.. raw:: html
+    <hr>
+    <p align="center"><em>MIT licensed. Designed for <a href="https://blocl.uk/schools/">Blocl Schools</a>. Built in Slovakia.</em></p>
+
 
 .. _bng_to_latlon.py: https://github.com/fmalina/bng_latlon/blob/master/bng_latlon/bng_to_latlon.py
 .. _latlon_to_bng.py: https://github.com/fmalina/bng_latlon/blob/master/bng_latlon/latlon_to_bng.py
