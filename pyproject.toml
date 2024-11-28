@@ -32,3 +32,9 @@ include = ["/bng_latlon"]
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.ruff]
+lint.select = ["E", "F", "B"]
+line-length = 100
+format.quote-style = "single"
+
