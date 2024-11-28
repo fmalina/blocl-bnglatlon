@@ -10,9 +10,6 @@ latitude and longitude (WGS84) and vice versa as used by
 
 Originally authored by [Hannah Fry](http://www.hannahfry.co.uk/).
 
-**NEW!** importable, installable, PEP8 styled, pure python, doctested,
-with optional numba compiler support for 10x speed
-
 Documentation
 =============
 
@@ -38,7 +35,7 @@ Get the latest stable release from PyPi:
 
     pip install bng_latlon
 
-optional but recommend is numba compiler
+optional numba compiler for faster math
 
     pip install numba
 
@@ -55,4 +52,4 @@ Usage
 
 ---
 
-<p align="center"><em>MIT licensed. Designed in the UK, published from Slovakia. <a href="https://blocl.uk/schools/">Blocl Schools</a>.</em></p>
+<p align="center"><em>Public domain. Designed in the UK, published from Slovakia. <a href="https://blocl.uk/schools/">Blocl Schools</a>.</em></p>
