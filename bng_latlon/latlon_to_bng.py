@@ -85,7 +85,7 @@ def WGS84toOSGB36(lat, lon):
     # meridional arc
     M = b * F0 * (M1 - M2 + M3 - M4)
 
-    I = M + N0
+    I = M + N0  # noqa E741
     II = nu*F0*sin(lat)*cos(lat)/2
     III = nu*F0*sin(lat)*cos(lat)**3*(5 - tan(lat)**2 + 9*eta2)/24
     IIIA = nu*F0*sin(lat)*cos(lat)**5*(61 - 58*tan(lat)**2 + tan(lat)**4)/720
