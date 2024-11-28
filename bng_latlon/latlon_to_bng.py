@@ -1,10 +1,9 @@
 """
 Converts lat lon (WGS84) to british national grid (OSBG36)
 Author: Hannah Fry
-http://www.hannahfry.co.uk/blog/2012/02/01/converting-latitude-and-longitude-to-british-national-grid
 """
 from math import sqrt, pi, sin, cos, tan, atan2
-from bng_latlon.bng_to_latlon import jit  # numba jit with fallback to dummy decorator if not installed
+from bng_to_latlon import jit  # numba with fallback to dummy jit decorator if not installed
 
 
 @jit(nopython=True)
@@ -112,7 +111,6 @@ if __name__ == "__main__":
     next(lat_lon)
 
     # Get the output file ready
-    # Issue encountered: https://stackoverflow.com/questions/3348460/csv-file-written-with-python-has-blank-lines-between-each-row
     output_file = open('LatLonandBNG.csv', 'w+', newline='')
     output = csv.writer(output_file, delimiter=',')
     output.writerow(['Lat', 'Lon', 'E', 'N'])
