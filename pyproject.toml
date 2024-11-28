@@ -3,7 +3,6 @@ name = "bng-latlon"
 version = 1.1
 description = "Converts british national grid (OSBG36) to lat lon (WGS84) and vice versa."
 readme = "README.md"
-license = "MIT License"
 authors = [
     { name = "Hannah Fry" },
     { name = "F. Malina", email = "fmalina@pm.me" },
