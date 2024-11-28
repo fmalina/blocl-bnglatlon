@@ -132,7 +132,7 @@ if __name__ == "__main__":
     import csv
 
     # Read in from a file
-    BNG = csv.reader(open('BNG.csv', 'rU'), delimiter=',')
+    BNG = csv.reader(open('BNG.csv', 'r'), delimiter=',')
     next(BNG)
 
     # Get the output file ready
