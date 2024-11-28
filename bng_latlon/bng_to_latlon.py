@@ -1,7 +1,6 @@
 """
 Converts british national grid to lat lon
 Author: Hannah Fry
-http://www.hannahfry.co.uk/blog/2012/02/01/converting-british-national-grid-to-latitude-and-longitude-ii
 """
 
 from math import sqrt, pi, sin, cos, tan, atan2
@@ -136,7 +135,7 @@ if __name__ == "__main__":
     next(BNG)
 
     # Get the output file ready
-    #changes made because of: #https://stackoverflow.com/questions/3348460/csv-file-written-with-python-has-blank-lines-between-each-row
+    # changes made because of: https://stackoverflow.com/questions/3348460/csv-blank-lines
     output_file = open('BNGandLatLon.csv', 'w+', newline='')
     output = csv.writer(output_file, delimiter=',')
     output.writerow(['Lat', 'Lon', 'E', 'N'])
