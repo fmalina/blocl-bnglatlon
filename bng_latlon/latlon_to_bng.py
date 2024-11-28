@@ -108,7 +108,7 @@ if __name__ == "__main__":
     import csv
 
     # Read in from a file
-    lat_lon = csv.reader(open('LatLon.csv', 'rU'), delimiter=',')
+    lat_lon = csv.reader(open('LatLon.csv', 'r'), delimiter=',')
     next(lat_lon)
 
     # Get the output file ready
