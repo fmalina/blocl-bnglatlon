@@ -4,7 +4,8 @@ Author: Hannah Fry
 http://www.hannahfry.co.uk/blog/2012/02/01/converting-latitude-and-longitude-to-british-national-grid
 """
 from math import sqrt, pi, sin, cos, tan, atan2
-from bng_latlon.bng_to_latlon import jit  # numba jit with fallback to dummy decorator if not installed
+# numba jit with fallback to dummy decorator if not installed
+from bng_latlon.bng_to_latlon import jit
 
 
 @jit(nopython=True)
@@ -86,7 +87,7 @@ def WGS84toOSGB36(lat, lon):
     # meridional arc
     M = b * F0 * (M1 - M2 + M3 - M4)
 
-    I = M + N0
+    I = M + N0  # noqa E741, use roman numerals
     II = nu*F0*sin(lat)*cos(lat)/2
     III = nu*F0*sin(lat)*cos(lat)**3*(5 - tan(lat)**2 + 9*eta2)/24
     IIIA = nu*F0*sin(lat)*cos(lat)**5*(61 - 58*tan(lat)**2 + tan(lat)**4)/720

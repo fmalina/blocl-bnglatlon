@@ -1,0 +1,37 @@
+[project]
+name = "bng_latlon"
+version = "1.1.1"
+description = "Converts british national grid (OSBG36) to lat lon (WGS84) and vice versa."
+keywords = ["GPS", "OSGB"]
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "F. Malina", email = "hi@blocl.com" },
+    { name = "Hannah Fry" },
+]
+license = { text = "MIT License" }
+urls = { "Home" = "https://github.com/fmalina/blocl-bnglatlon", "Funding" = "https://unilexicon.com/fm/pay.html" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+dependencies = []
+
+
+[tool.setuptools.packages.find]
+include = ["bng_latlon"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+lint.select = ["E", "F", "B"]
+line-length = 98
+format.quote-style = "single"
+

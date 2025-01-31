@@ -102,7 +102,7 @@ def OSGB36toWGS84(E, N):
     e2_2 = 1 - (b_2*b_2)/(a_2*a_2)  # The eccentricity of the GRS80 ellipsoid
     p = sqrt(x_2**2 + y_2**2)
 
-    # Lat is obtained by an iterative proceedure:
+    # Lat is obtained by an iterative procedure:
     lat = atan2(z_2, (p*(1-e2_2)))  # Initial value
     latold = 2*pi
     while abs(lat - latold) > 10**-16:
@@ -136,7 +136,6 @@ if __name__ == "__main__":
     next(BNG)
 
     # Get the output file ready
-    #changes made because of: #https://stackoverflow.com/questions/3348460/csv-file-written-with-python-has-blank-lines-between-each-row
     output_file = open('BNGandLatLon.csv', 'w+', newline='')
     output = csv.writer(output_file, delimiter=',')
     output.writerow(['Lat', 'Lon', 'E', 'N'])
