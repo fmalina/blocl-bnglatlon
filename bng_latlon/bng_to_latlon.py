@@ -89,8 +89,3 @@ if __name__ == "__main__":
     assert bng_to_latlon(538890, 177320) == (51.477795, -0.001402)
     assert bng_to_latlon(352500.2, 401400) == (53.50713, -2.71766)
     convert_csv('../csv/BNG.csv', '../csv/BNGandLatLon.csv', bng_to_latlon)
-
-
-# To Do
-# # common importable constants and separate util functions (Helmut transform...)
-# # CLI to accept filename or value pair as args
