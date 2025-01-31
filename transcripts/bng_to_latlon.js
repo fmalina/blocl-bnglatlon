@@ -1,6 +1,6 @@
 //Written by Chris Dack
 
-function OSGB36toWGS84(E, N) {
+function bng_to_latlon(E, N) {
 
     //E, N are the British national grid coordinates - eastings and northings
     var a = 6377563.396;

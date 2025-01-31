@@ -45,12 +45,12 @@ optional but recommend is numba compiler
 Usage
 =====
 
-    >>> from bng_latlon import OSGB36toWGS84
-    >>> OSGB36toWGS84(538890, 177320)
+    >>> from bng_latlon import bng_to_latlon
+    >>> bng_to_latlon(538890, 177320)
     (51.477795, -0.001402)
     ...
-    >>> from bng_latlon import WGS84toOSGB36
-    >>> WGS84toOSGB36(51.4778, -0.0014)
+    >>> from bng_latlon import latlon_to_bng
+    >>> latlon_to_bng(51.4778, -0.0014)
     (538890.1053, 177320.4965)
 
 ---
